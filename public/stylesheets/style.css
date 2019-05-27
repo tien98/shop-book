@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+.thum .image-respon{
+    max-height: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.card{
+    padding-top: 5px;
+}
+.thum{
+    margin-top: 5px;
+}
+img:hover {
+    box-shadow: 0 0 2px 1px gray;
+    border-radius: 1.25em;
+  }
+.price{
+    font-weight: bold;
+    font-size: 18px;
+}
