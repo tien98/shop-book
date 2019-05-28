@@ -1,59 +1,21 @@
 <% include ../partials/header.ejs %>
     <div class="container mt-2">
         <div class="row">        
-            <div class="thum col-6 col-md-4" >
-                <div class="card">
-                        <a href="#"><img class="rounded mx-auto d-block" src="/images/doremon.jpg"/></a>
-                        <div class="card-body">
-                          <h5 class="card-title">Doremon</h5>
-                          <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <div class="clearfix">
-                            <div class="price fa-pull-left">$12</div>
-                            <a href="#" class="btn btn-success fa-pull-right">Add to cart</a>
-                          </div>
-                        </div>
-                </div>
-              </div>
-              <div class="thum col-6 col-md-4" >
+            <% data.forEach(function(value , key){ %> 
+                <div class="thum col-6 col-md-4" >
                     <div class="card">
-                            <img class="rounded mx-auto d-block" src="/images/conan.jpg"/>
-                            <div class="card-body">
-                              <h5 class="card-title">Conan</h5>
-                              <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <div class="clearfix">
-                                <div class="price fa-pull-left">$12</div>
-                                <a href="#" class="btn btn-success fa-pull-right">Add to cart</a>
-                              </div>
+                        <a href="#"><img class="rounded mx-auto d-block" src="<%= value.imagePath %>"/></a>
+                        <div class="card-body">
+                            <h5 class="card-title"><%= value.title%></h5>
+                            <p class="card-text text-truncate"><%= value.description %></p>
+                            <div class="clearfix">
+                            <div class="price fa-pull-left">$<%= value.price %></div>
+                            <a href="#" class="btn btn-success fa-pull-right"><i class="fas fa-cart-plus"></i> Add To Cart</a>
                             </div>
-                    </div>
-                  </div>
-                  <div class="thum col-6 col-md-4" >
-                        <div class="card">
-                                <img class="rounded mx-auto d-block" src="/images/7vienngocrong.jpg"/>
-                                <div class="card-body">
-                                  <h5 class="card-title">7 Viên Ngọc Rồng</h5>
-                                  <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <div class="clearfix">
-                                    <div class="price fa-pull-left">$12</div>
-                                    <a href="#" class="btn btn-success fa-pull-right">Add to cart</a>
-                                  </div>
-                                </div>
                         </div>
-                      </div>
-                      <div class="thum col-6 col-md-4" >
-                            <div class="card">
-                                    <img class="rounded mx-auto d-block" src="/images/doremon.jpg"/>
-                                    <div class="card-body">
-                                      <h5 class="card-title">Doremon</h5>
-                                      <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <div class="clearfix">
-                                        <div class="price fa-pull-left">$12</div>
-                                        <a href="#" class="btn btn-success fa-pull-right">Add to cart</a>
-                                      </div>
-                                    </div>
-                            </div>
-                          </div>
-                                    
+                    </div>
+                </div> 
+            <% }) %>  
         </div>
     </div>
     
