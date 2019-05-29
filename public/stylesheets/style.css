@@ -1,6 +1,20 @@
 *{
     box-sizing: border-box;
 }
+.shoptop{
+    margin: 0;
+    padding:0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 100;
+}
+.mt-2{
+    margin-top: 5.5rem!important;
+}
 .thum .image-respon{
     max-height: 80%;
 }

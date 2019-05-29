@@ -5,13 +5,15 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
 var session = require('express-session');
- 
+var passport = require('passport');
+var flash = require('connect-flash');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
 
 mongoose.connect('mongodb://localhost/shopbook');
+require('./config/passport');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 // app.engine('.ejs', expressEjs({defaultLayout: 'index', extname: '.ejs'}));
@@ -26,6 +28,10 @@ app.use(session({
   resave: false,
   saveUninitialized: false
 }))
+app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);

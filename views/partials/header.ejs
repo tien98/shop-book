@@ -8,8 +8,8 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid shoptop">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light top">
       <a class="navbar-brand" href="#">LoGo</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,14 +26,17 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
+         <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+           </form>
           <ul class="navbar-nav ml-auto"> 
             <li class="nav-item">
               <a class="nav-link" href="#"> <i class="fas fa-shopping-cart"></i> Shopping Cart</a>
             </li>
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <i class="fas fa-user"></i> User Management
-              </a>
+               <i class="fas fa-user"></i> User Management</a>
               <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
@@ -44,9 +47,5 @@
         </div>
       </nav>
     </div>
-    <div class="container mt-2 clearfix">
-      <form class="form-inline fa-pull-right">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
+   
+    
