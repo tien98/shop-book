@@ -1,1 +1,36 @@
-<h1>User profile</h1>
+<% include ../partials/header.ejs %>
+    <div class="container">
+            <div class="row ">
+                <div class="jumbotron col-md-12">
+                    <h1 class="display-3 text-center">Hello User</h1>
+                    <p class="lead text-center">Profile</p>
+                    <hr class="my-2">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Address</th>
+                                <th>Address 2</th>
+                                <th>City</th>
+                                <th>Sex</th>
+                                <th>Phone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row"> Tien</td>
+                                <td>Quach</td>
+                                <td>HN</td>
+                                <td>Bac Ninh</td>
+                                <td>Bac Ninh</td>
+                                <td>Male</td>
+                                <td>09090909090</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<% include ../partials/footer.ejs %>

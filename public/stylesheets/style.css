@@ -1,6 +1,12 @@
 *{
     box-sizing: border-box;
 }
+.bg-light{
+    background:  #F8F8AC!important;
+}
+body{
+    background: #f8f9fa;
+}
 .shoptop{
     margin: 0;
     padding:0;

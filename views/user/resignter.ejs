@@ -9,12 +9,12 @@
         <div class="row ">
             <form class="rounded mx-auto d-block border m-5 p-3" action="/user/resignter" method="POST">
                 <div class="h2 text-center ">Resignter</div>
-                <div class="form-row mt-5">
-                    <div class="form-group col-md-12 text-center ">
+                 <div class="form-group col-md-12 text-center ">
                         <% if(hashErrors){ %>
                             <div class="alert alert-danger"> <%= messages %> </div>
                         <% }%>
                     </div>
+                <div class="form-row mt-5">
                     <div class="form-group col-md-6">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
